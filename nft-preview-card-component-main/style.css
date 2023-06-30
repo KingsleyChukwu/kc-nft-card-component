@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400&family=Raleway:ital,wght@0,500;1,400;1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+:root {
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+}
+
+body {
+    background-color: var(--main-bg);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-size: 16px;
+}
+
+.card {
+    max-width: 360px;
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.diamond-img {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+.diamond-img img {
+    width: 100%;
+    border-radius: inherit;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white);
+    padding: 20px 0 18px;
+}
+
+.eq-col {
+    color: var(--soft-blue);
+}
+
+.coin-info {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--line-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.coin-info .coin-price {
+    color: var(--cyan);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.coin-price img {
+    margin-right: 7px;
+}
+
+.coin-info  .time-left{
+    color: var(--soft-blue);
+    display: flex;
+    align-items: center;
+}
+
+.time-left img {
+    padding-right: 5px;
+}
+
+.creation-details {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.creation-details .creator {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+    margin-right: 10px;
+}
+
+.creator img {
+    width: 100%;
+}
+
+.creation-text {
+    color: var(--white);
+}
+
+.creation-text span {
+    color: var(--soft-blue);
+    padding-right: 3px;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 10px;
+    color: var(--soft-blue);
+    word-spacing: 3px;
+}
+
+.attribution a {
+    color: var(--white);
+}
